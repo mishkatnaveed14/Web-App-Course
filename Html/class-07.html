@@ -12,35 +12,65 @@
     <img src="../assets/css/image/logo_1.png" alt="Dreamscape">
 
     <table border="2">
-        <tr>
-            <th>Header column 1</th>
-            <th>Header column 2</th>
-            <th>Header column 3</th>
-            <th>Header column 4</th>
-        </tr>
-        <tr>
-            <td>item 1</td>
-            <td>item 2</td>
-           <th>item 3 Nested table</th>
-            <td>item 4</td>
-        </tr>
-        <tr>
-         <th>row 3 nested table 2</th>
-            <td>row 3 item 2</td>
-            <td>row 3 item 3 </td>
-            <td>row 3 item 4</td>
-        </tr>
-        <tr>
-            <td>row 4 item 1</td>
-            <td>row 4 item 2</td>
-            <td>row 4 item 3</td>
-        </tr>
-        <tr>
-            <td>row 5 - last row of outer</td>
-          
-        </tr>
+        <thead>
+            <tr>
+                <th>Header column 1</th>
+                <th>Header column 2</th>
+                <th>Header column 3</th>
+                <th>Header column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <th rowspan="2">item 3 Nested table
+                    <table border="1">
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 Header</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 3 Header</td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </th>
+                <td>item 4</td>
+            </tr>
+            <tr>
+                <th style=" padding-right: 5px;">row 3 nested table 2
+                    <table border="1" style="margin: 10px 0;">
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </th>
+                <td>row 3 item 2</td>
+                <td rowspan="2">row 3 item 3 </td>
+            </tr>
+            <tr>
+                <td>row 4 item 1</td>
+                <td>row 4 item 2</td>
+                <td>row 4 item 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"> row 5 - last row of outer</td>
+            </tr>
+        </tfoot>
     </table>
-
+    <br><br><br><br><br><br><br><br>
 </body>
 
 </html>
