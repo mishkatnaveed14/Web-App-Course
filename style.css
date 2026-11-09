@@ -1,0 +1,25 @@
+/* universal selector  */
+*{
+    color: white;
+    background-color: brown;
+    font-family:cursive;
+}
+input{
+    border: 2px solid rgb(34, 0, 255);
+    background-color: aquamarine;
+    
+}
+
+/* id selector  */
+#date{
+    /* height: 200px; */
+}
+#para{
+    color: brown;
+    background-color: aliceblue;
+}
+/* class selector */
+.para-group{
+    color: burlywood;
+
+}
