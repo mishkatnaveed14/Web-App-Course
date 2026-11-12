@@ -1,25 +1,28 @@
-/* universal selector  */
 *{
+    margin: 0;
+}
+nav{
+    background-color: rgb(7, 2, 28);
+    padding: 20px;
+
+}
+nav a{
     color: white;
-    background-color: brown;
-  font-family: monospace;
-}
-input{
-    border: 2px solid rgb(34, 0, 255);
-    background-color: aquamarine;
-    
-}
-
-/* id selector  */
-#date{
-    /* height: 200px; */
-}
-#para{
-    color: brown;
-    background-color: aliceblue;
-}
-/* class selector */
-.para-group{
-    color: burlywood;
+    text-decoration: none;
 
 }
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(27, 20, 20);
+    color: white;
+    background-color: rgb(218, 150, 102);
+margin: 40px;
+padding: 20px;
+
+}
+
+
+
