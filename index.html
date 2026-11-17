@@ -1,36 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web and app development hub </title>
+  <meta charset="UTF-8">
+  <title>Velvet Roast | Artisan Coffee</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+   <style>
+    /* 1. Universal Selector & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #121315;
+  color: #FCFAF6;
+}
+
+/* 2. Navbar (Colors, Padding, Borders) */
+#navbar {
+  background-color: #1a1b1e;
+  padding: 20px 50px;
+  border-bottom: 2px solid #C5A880;
+  text-align: center;
+}
+
+.logo {
+  color: #D4AF37;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #FCFAF6;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: #D4AF37;
+}
+
+/* 3. Hero Section (Background Image, Cover, Center, Height) */
+#hero {
+  height: 500px;
+  background-image: linear-gradient(rgba(18, 19, 21, 0.7), rgba(18, 19, 21, 0.7)), 
+                    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  color: #D4AF37;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #e0ddd7;
+  margin-bottom: 30px;
+}
+
+/* Button Styling (Padding, Border, Border-Radius) */
+.btn {
+  display: inline-block;
+  background-color: #D4AF37;
+  color: #121315;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #D4AF37;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #D4AF37;
+}
+
+/* 4. Menu Section & Cards (Width, Height, Margin, Padding, Border) */
+#menu {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 34px;
+  color: #D4AF37;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #a09d97;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: inline-block;
+  width: 300px;
+  background-color: #1c1d21;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  vertical-align: top;
+}
+
+.card:hover {
+  border-color: #D4AF37;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #FCFAF6;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #b5b2ac;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: inline-block;
+  color: #D4AF37;
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* 5. Form Section (Centering with Margin Auto, Width, Inputs) */
+#contact {
+  background-color: #18191c;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.form-box {
+  width: 450px;
+  margin: 0 auto; /* Box ko center karne ka classic tareeqa */
+  background-color: #121315;
+  padding: 35px;
+  border: 1px solid #C5A880;
+  border-radius: 10px;
+}
+
+.form-box h2 {
+  color: #D4AF37;
+  margin-bottom: 20px;
+}
+
+.form-box input, 
+.form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background-color: #1c1d21;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #FCFAF6;
+}
+
+/* 6. Footer */
+footer {
+  background-color: #0d0e10;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #222;
+  font-size: 14px;
+  color: #888;
+}
+   </style>
 </head>
 <body>
-<header>
-    <nav>
-        <a href="#">Home </a>
-        <a href="/Html/about-us.html">About us page</a>
-        <a href="/assets/service.html">service</a>
-        <a href="assets/css/logo_1.png">img</a>
 
-    </nav>
-</header>
-<section>
-    
-</section>
-<section></section>
-<section></section>
-<section></section>
-<section></section>
-<footer></footer>
-<p> <a href="https://github.com/mishkatnaveed14/zest-co-Restaurant-Website" target="_blank ">github</a></p>
-<h1>home page </h1>
-<abbr title="professor">prof</abbr>
-<!-- <blockquote cite="https://www.rekhta.org/Poets/jaun-eliya/couplets?gad_source=1&gad_campaignid=229757436&gbraid=0AAAAADlifVT1y0pXzQFkCpn22YKtssDtG&gclid=CjwKCAiAhqHXBhAXEiwATbksU7bvz9U_SEcbuc6lK2ss7wvNqQSEwtwV1sz5JoEh6DT9Zhg5w_a6CRoCSY4QAvD_BwE">
-    maiñ bhī bahut ajiib huuñ itnā ajiib huuñ ki bas
-ḳhud ko tabāh kar liyā aur malāl bhī nahīñ
-</blockquote> -->
+  <!-- Navigation Bar -->
+  <header id="navbar">
+    <h2 class="logo">VELVET ROAST</h2>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu">Our Menu</a></li>
+      <li><a href="#contact">Order Now</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section (Background Image + Text + Button) -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Wake Up To Pure Perfection</h1>
+      <p>Hand-roasted single-origin coffee beans brewed fresh every morning.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Cards Section (Box Model: Margin, Padding, Border, Width, Height) -->
+  <section id="menu">
+    <h2 class="section-title">Signature Blends</h2>
+    <p class="section-subtitle">Crafted with passion for true coffee lovers</p>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Espresso">
+      <h3>Classic Espresso</h3>
+      <p>Rich, bold, and velvety crema with dark chocolate notes.</p>
+      <span class="price">$4.50</span>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400" alt="Latte">
+      <h3>Caramel Macchiato</h3>
+      <p>Steamed silky milk layered with espresso and golden caramel.</p>
+      <span class="price">$5.25</span>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400" alt="Cold Brew">
+      <h3>Vanilla Cold Brew</h3>
+      <p>Slow-steeped for 18 hours for a smooth, refreshing finish.</p>
+      <span class="price">$4.95</span>
+    </div>
+  </section>
+
+  <!-- Order / Contact Form Section -->
+  <section id="contact">
+    <div class="form-box">
+      <h2>Reserve a Table</h2>
+      <form>
+        <input type="text" placeholder="Your Full Name" required>
+        <input type="email" placeholder="Your Email Address" required>
+        <textarea rows="3" placeholder="Special Request (e.g., Window Seat)"></textarea>
+        <button type="submit" class="btn">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Velvet Roast Coffee Co. | All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
