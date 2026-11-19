@@ -4,37 +4,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Velvet Roast</title>
     <style>
+        /* 1. Hamesha * mein ye 3 cheezein rakhein (overflow: hidden nahi) */
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
         }
 
         header {
             background-color: antiquewhite;
-            padding: 20px;
+            padding: 20px 50px;
         }
 
-        nav a{
-            display: inline-block;
+        /* 2. Logo ko left par float karein */
+        header span {
+            float: left;
+            font-size: 22px;
+            font-weight: bold;
+        }
 
+        /* 3. Nav ko block hi rehne dein aur text-align right karein */
+        nav {
+            text-align: right;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-left: 25px;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+
+        .hero-sec {
+            height: 100vh;
+            width: 100%;
+            /* Image ko thora dark karne ke liye linear-gradient best hai taake white text saaf dikhe */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                              url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            /* 4. Margin-top ki jagah parent ko padding-top dein */
+            padding-top: 220px; 
+        }
+
+        .hero-text {
+            color: white;
+            width: 60%; /* Text ko screen ke beech mein rakhne ke liye */
+            margin: 0 auto; 
+        }
+
+        .hero-text h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .hero-text button {
+            padding: 12px 30px;
+            font-size: 16px;
+            background-color: antiquewhite;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .products-section {
+            padding: 60px 50px;
+            background-color: #FCFAF6;
+            text-align: center;
+        }
+
+        .products-section h2 {
+            font-size: 32px;
+            color: #121315;
+            margin-bottom: 40px;
+        }
+
+        /* 1. Parent container mein overflow: hidden lagana zaroori hai */
+        .cards-container {
+            width: 100%;
+            overflow: hidden; 
+        }
+
+        /* 2. Har card ko float: left aur percentage width dein */
+        .card {
+            float: left;
+            width: 31.33%; /* 3 cards ke liye ~31.33% width + 1% left/right margin = 100% */
+            margin: 0 1% 30px 1%; /* Cards ke darmiyan aur neeche gap ke liye */
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Image ko stretch hone se bachane ke liye */
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #121315;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #D4AF37;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .card button {
+            width: 100%;
+            padding: 10px;
+            background-color: #121315;
+            color: #FCFAF6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .card button:hover {
+            background-color: #D4AF37;
+            color: #121315;
         }
     </style>
-
 </head>
 
 <body>
     <header>
-        <h1>Velvet Roast</h1>
+        <span>Velvet Roast</span>
         <nav>
             <a href="#home">home</a>
-            <a href="#home">about</a>
-            <a href="#home">services</a>
-            <a href="#home">pages</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#pages">pages</a>
         </nav>
     </header>
 
+    <section class="hero-sec">
+        <div class="hero-text">
+            <h1>Display the content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam inventore deleniti dolor earum fugiat illo
+                placeat fugit velit eos natus illum nihil, exercitationem officiis doloribus, neque, voluptatum suscipit
+                dolorum et.</p>
+            <button>Read More</button>
+        </div>
+    </section>
+    <section class="products-section">
+        <h2>Our Signature Blends</h2>
+
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600" alt="Espresso Roast">
+                <h3>Dark Velvet Espresso</h3>
+                <p>Rich, bold aroma with hints of dark chocolate and toasted nuts.</p>
+                <span class="price">$18.00</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600" alt="Caramel Latte">
+                <h3>Golden Caramel Blend</h3>
+                <p>Smooth medium roast infused with natural sweet caramel notes.</p>
+                <span class="price">$20.00</span>
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600" alt="Vanilla Roast">
+                <h3>Madagascar Vanilla</h3>
+                <p>Creamy and aromatic beans roasted slowly for a silky finish.</p>
+                <span class="price">$22.00</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Velvet Roast. All rights reserved.</p>
+
+    </footer>
 </body>
 
 </html>

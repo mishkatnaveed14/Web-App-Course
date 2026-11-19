@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(178, 178, 250);
+    padding: 15px;
+}
+
+header span {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+nav {
+    /* border: 2px solid black; */
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    /* border: 2px solid black; */
+    margin-right: 7px;
+}
+
+/* hero section */
+#hero-sec {
+    background-image: url("https://t3.ftcdn.net/jpg/06/22/55/46/360_F_622554618_pc9Mb4ypnQ1MCi3Xdo3ENNtgw9zSQOf2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 91.5vh;
+    width: 100%;
+    text-align: center;
+    padding: 200px;
+}
